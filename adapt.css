@@ -1,0 +1,154 @@
+/* Для экранов 1920px и шире */
+@media (min-width: 1920px) {
+    .title {
+      font-size: 4vw;
+    }
+  
+    .input-class {
+      width: 300px;
+      height: 50px;
+    }
+  
+    .start-btn-class {
+      padding: 20px 50px;
+      font-size: 22px;
+    }
+  
+    .item-class {
+      width: 220px;
+      height: 280px;
+    }
+  
+    .card-front,
+    .card-back {
+      font-size: 80px;
+    }
+  
+    .win-msg {
+      font-size: 100px;
+    }
+  }
+  
+  /* Для экранов 1024px */
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 6vw;
+    }
+  
+    .input-class {
+      width: 250px;
+      height: 40px;
+    }
+  
+    .start-btn-class {
+      padding: 18px 45px;
+      font-size: 20px;
+    }
+  
+    .item-class {
+      width: 200px;
+      height: 240px;
+    }
+  
+    .card-front,
+    .card-back {
+      font-size: 70px;
+    }
+  
+    .win-msg {
+      font-size: 90px;
+    }
+  }
+  
+  /* Для экранов 768px */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 8vw;
+    }
+  
+    .input-class {
+      width: 200px;
+      height: 35px;
+    }
+  
+    .start-btn-class {
+      padding: 15px 40px;
+      font-size: 18px;
+    }
+  
+    .item-class {
+      width: 180px;
+      height: 220px;
+    }
+  
+    .card-front,
+    .card-back {
+      font-size: 60px;
+    }
+  
+    .win-msg {
+      font-size: 80px;
+    }
+  }
+  
+  /* Для экранов 480px */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 14vw;
+    }
+  
+    .input-class {
+      width: 150px;
+      height: 30px;
+    }
+  
+    .start-btn-class {
+      padding: 12px 35px;
+      font-size: 16px;
+    }
+  
+    .item-class {
+      width: 150px;
+      height: 180px;
+    }
+  
+    .card-front,
+    .card-back {
+      font-size: 50px;
+    }
+  
+    .win-msg {
+      font-size: 70px;
+    }
+  }
+  
+  /* Для экранов 320px */
+  @media (max-width: 320px) {
+    .title {
+      font-size: 18vw;
+    }
+  
+    .input-class {
+      width: 130px;
+      height: 30px;
+    }
+  
+    .start-btn-class {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  
+    .item-class {
+      width: 120px;
+      height: 160px;
+    }
+  
+    .card-front,
+    .card-back {
+      font-size: 40px;
+    }
+  
+    .win-msg {
+      font-size: 60px;
+    }
+  }

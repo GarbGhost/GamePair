@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  padding: 30px 50px;
+  background-image: url("./image/winter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Henny Penny", system-ui;
+}
+
+.title {
+  
+  display: inline-block;
+  text-align: center;
+  width: fit-content;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 8vw;
+  font-weight: bold;
+  background: linear-gradient(to right, #00adb5, #fd3f4f);
+  background-clip: text;
+  color: transparent;
+  
+  filter: drop-shadow(0px 6px 0px rgba(0, 0, 0, 0.6));
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.input-class {
+  border: 2px solid goldenrod;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  background-color: gold;
+  text-align: center;
+  transition: width 0.6s, height 0.4s, font-size 0.6s;
+}
+
+.input-class::placeholder {
+  transition: font-size 0.6s;
+  color: darkslategrey;
+}
+
+.input-class:hover {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+.input-class:hover::placeholder {
+  font-size: 20px;
+}
+
+.win-msg {
+  font-size: 80px;
+  font-weight: 900;
+  background: #121fcf;
+  background: linear-gradient(to top, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.field-ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.item-class {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  box-shadow: 15px 20px 17px -5px rgba(0, 0, 0, 0.58);
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: width 0.6s, height 0.4s, transform 0.7s;
+}
+
+.item-class:hover .question-mark {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input-class-shake {
+  animation: input-shake 0.5s ease-in-out infinite;
+  animation: input-shake 0.2s ease-in-out;
+}
+@keyframes input-shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.item-class:hover {
+  width: 200px;
+  height: 250px;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  box-shadow: inset 24px 28px 26px 3px rgba(0, 0, 0, 0.58);
+  text-shadow: 2px 7px 6px rgba(0, 0, 0, 0.6);
+  font-size: 60px;
+  background-image: url("./image/v782-adj-25.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-front {
+  text-shadow: 15px 20px 17px -5px rgba(0, 0, 0, 0.58);
+  box-shadow: 24px 28px 26px 3px rgba(0, 0, 0, 0.58);
+  font-size: 60px;
+  background-image: url("./image/vintage-background-with-grunge-cloud-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+.match {
+  pointer-events: none;
+}
+
+.start-btn-class {
+  position: relative;
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background: linear-gradient(45deg, #ff00ff, #0077ff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+}
+
+/* 🌟 Hover эффект – свечение и увеличение */
+.start-btn-class:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.9), 0 0 40px rgba(0, 119, 255, 0.9);
+}
+
+/* 💥 Active эффект – кнопка "проминается" */
+.start-btn-class:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.7);
+}
+
+/* 🌈 Анимация "бегущего света" */
+.start-btn-class::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 10%,
+    transparent 70%
+  );
+  transition: all 0.5s ease-in-out;
+}
+
+/* Эффект вспышки при наведении */
+.start-btn-class:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.win-msg {
+}
