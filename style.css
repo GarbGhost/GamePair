@@ -10,7 +10,7 @@ body {
   /* justify-content: center; */
   margin: 0;
   padding: 30px 50px;
-  background-image: url("./image/winter.jpg");
+  background-image: url("./image/winter.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,7 +169,7 @@ body {
   box-shadow: inset 24px 28px 26px 3px rgba(0, 0, 0, 0.58);
   text-shadow: 2px 7px 6px rgba(0, 0, 0, 0.6);
   font-size: 60px;
-  background-image: url("./image/v782-adj-25.jpg");
+  background-image: url("./image/v782-adj-25.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,7 +179,7 @@ body {
   text-shadow: 15px 20px 17px -5px rgba(0, 0, 0, 0.58);
   box-shadow: 24px 28px 26px 3px rgba(0, 0, 0, 0.58);
   font-size: 60px;
-  background-image: url("./image/vintage-background-with-grunge-cloud-design.jpg");
+  background-image: url("./image/vintage-background-with-grunge-cloud-design.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

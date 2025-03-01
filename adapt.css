@@ -1,154 +1,55 @@
-/* Для экранов 1920px и шире */
-@media (min-width: 1920px) {
-    .title {
-      font-size: 4vw;
-    }
-  
-    .input-class {
-      width: 300px;
-      height: 50px;
-    }
-  
-    .start-btn-class {
-      padding: 20px 50px;
-      font-size: 22px;
-    }
-  
-    .item-class {
-      width: 220px;
-      height: 280px;
-    }
-  
-    .card-front,
-    .card-back {
-      font-size: 80px;
-    }
-  
-    .win-msg {
-      font-size: 100px;
-    }
-  }
-  
-  /* Для экранов 1024px */
-  @media (max-width: 1024px) {
-    .title {
-      font-size: 6vw;
-    }
-  
-    .input-class {
-      width: 250px;
-      height: 40px;
-    }
-  
-    .start-btn-class {
-      padding: 18px 45px;
-      font-size: 20px;
-    }
-  
-    .item-class {
-      width: 200px;
-      height: 240px;
-    }
-  
-    .card-front,
-    .card-back {
-      font-size: 70px;
-    }
-  
-    .win-msg {
-      font-size: 90px;
-    }
-  }
-  
-  /* Для экранов 768px */
-  @media (max-width: 768px) {
-    .title {
-      font-size: 8vw;
-    }
-  
-    .input-class {
-      width: 200px;
-      height: 35px;
-    }
-  
-    .start-btn-class {
-      padding: 15px 40px;
-      font-size: 18px;
-    }
-  
-    .item-class {
-      width: 180px;
-      height: 220px;
-    }
-  
-    .card-front,
-    .card-back {
-      font-size: 60px;
-    }
-  
-    .win-msg {
-      font-size: 80px;
-    }
-  }
-  
-  /* Для экранов 480px */
-  @media (max-width: 480px) {
-    .title {
-      font-size: 14vw;
-    }
-  
-    .input-class {
-      width: 150px;
-      height: 30px;
-    }
-  
-    .start-btn-class {
-      padding: 12px 35px;
-      font-size: 16px;
-    }
-  
-    .item-class {
-      width: 150px;
-      height: 180px;
-    }
-  
-    .card-front,
-    .card-back {
-      font-size: 50px;
-    }
-  
-    .win-msg {
-      font-size: 70px;
-    }
-  }
-  
-  /* Для экранов 320px */
-  @media (max-width: 320px) {
-    .title {
-      font-size: 18vw;
-    }
-  
-    .input-class {
-      width: 130px;
-      height: 30px;
-    }
-  
-    .start-btn-class {
-      padding: 10px 30px;
-      font-size: 14px;
-    }
-  
-    .item-class {
-      width: 120px;
-      height: 160px;
-    }
-  
-    .card-front,
-    .card-back {
-      font-size: 40px;
-    }
-  
-    .win-msg {
-      font-size: 60px;
-    }
-  }
+/* Медиа-запросы для адаптации */
+@media screen and (max-width: 1024px) {
+  .title { font-size: 7vw; }
+  .input-class { width: 20vw; font-size: 1.2vw; }
+  .input-class:hover { width: 25vw; font-size: 1.8vw; }
+  .input-class::placeholder { font-size: 1.2vw; }
+  .input-class:hover::placeholder { font-size: 1.8vw; }
+  .item-class { width: 12vw; height: 16vw; }
+  .item-class:hover { width: 14vw; height: 18vw; }
+  .card-front, .card-back { font-size: 4.5vw; }
+  .win-msg { font-size: 6vw; }
+  .start-btn-class { font-size: 1.5vw; padding: 1vw 2.5vw; }
+}
+
+@media screen and (max-width: 768px) {
+  body { padding: 2vw 3vw; }
+  .title { font-size: 6vw; }
+  .input-class { width: 25vw; font-size: 1.5vw; }
+  .input-class:hover { width: 30vw; font-size: 2vw; }
+  .input-class::placeholder { font-size: 1.5vw; }
+  .input-class:hover::placeholder { font-size: 2vw; }
+  .item-class { width: 15vw; height: 20vw; }
+  .item-class:hover { width: 17vw; height: 22vw; }
+  .card-front, .card-back { font-size: 5vw; }
+  .win-msg { font-size: 7vw; }
+  .start-btn-class { font-size: 2vw; padding: 1.5vw 3vw; }
+}
+
+@media screen and (max-width: 480px) {
+  body { padding: 3vw 4vw; }
+  .title { font-size: 8vw; }
+  .input-class { width: 30vw; font-size: 2vw; }
+  .input-class:hover { width: 35vw; font-size: 2.5vw; }
+  .input-class::placeholder { font-size: 2vw; }
+  .input-class:hover::placeholder { font-size: 2.5vw; }
+  .item-class { width: 18vw; height: 24vw; }
+  .item-class:hover { width: 20vw; height: 26vw; }
+  .card-front, .card-back { font-size: 6vw; }
+  .win-msg { font-size: 8vw; }
+  .start-btn-class { font-size: 2.5vw; padding: 2vw 4vw; }
+}
+
+@media screen and (max-width: 320px) {
+  body { padding: 4vw 5vw; }
+  .title { font-size: 9vw; }
+  .input-class { width: 35vw; font-size: 2.5vw; }
+  .input-class:hover { width: 40vw; font-size: 3vw; }
+  .input-class::placeholder { font-size: 2.5vw; }
+  .input-class:hover::placeholder { font-size: 3vw; }
+  .item-class { width: 20vw; height: 26vw; }
+  .item-class:hover { width: 22vw; height: 28vw; }
+  .card-front, .card-back { font-size: 7vw; }
+  .win-msg { font-size: 9vw; }
+  .start-btn-class { font-size: 3vw; padding: 2.5vw 5vw; }
+}
